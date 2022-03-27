@@ -1,8 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import Navarea from './Header';
+import Topimage from './Topimg';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+ReactDOM.render(
+  <React.StrictMode>
+    <Navarea />
+  </React.StrictMode>,
+  document.getElementById('header')
+);
+
+ReactDOM.render(
+  <React.StrictMode>
+    <Topimage />
+  </React.StrictMode>,
+  document.getElementById('topimg')
+);
 
 ReactDOM.render(
   <React.StrictMode>
