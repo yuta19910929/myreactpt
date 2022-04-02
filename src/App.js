@@ -1,13 +1,14 @@
+import React from 'react';
+import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
 import './App.css';
-import Article from './components/Article';
+import Header from './components/Header';
+import TopContent from './components/TopContent';
 
 function App() {
   return (
 		<div>
-			<Article
-				title={'Reactポートフォリオ'}
-				content={'Reactを使ったポートフォリオ'}
-			/>
+      <Header />
+      <TopContent />
 		</div>
 	);
 }
