@@ -11,6 +11,9 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
+import ImageLogo from '../img/logo512.png';
+import '../css/style.css';
+import '../App.css';
 
 //reactIcons
 import { FaReact } from 'react-icons/fa';
@@ -49,9 +52,7 @@ const ResponsiveAppBar = () => {
             sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
           >
             <Box sx={{ mr: 1 }}>
-              <IconContext.Provider　value={{ color: '#00ffff', size: '30px' }}>
-                <FaReact />
-              </IconContext.Provider>
+              <img src={ImageLogo} className="navLogo App-logo"/>
             </Box>
             MyReactPortfolio
           </Typography>
@@ -101,7 +102,7 @@ const ResponsiveAppBar = () => {
           <Box sx={{ mr: 1, }}>
             <IconContext.Provider　value={{ color: '#00ffff', size: '30px' }}>
               <FaReact />
-              </IconContext.Provider>
+            </IconContext.Provider>
           </Box>
             MyReactPortfolio
           </Typography>
