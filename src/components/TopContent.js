@@ -1,9 +1,10 @@
-import { Grid } from '@material-ui/core';
+import { Link } from "react-router-dom";
 import Box from '@mui/material/Box';
-import IconButton from '@mui/material/IconButton';
-import { FaUserAlt, FaRegObjectUngroup, FaChalkboardTeacher, FaRegEnvelope } from 'react-icons/fa';
-import { IconContext } from 'react-icons'
-import { TopLinkButton, Background } from './index';
+import TopSubArea from './TopSubArea';
+import { IconContext } from 'react-icons';
+import { TopLinkButton, Background, About, Skill, Career, Contact } from './index';
+
+//img
 import Image1 from '../img/yellow_about.png';
 import Image2 from '../img/blue_skill.png';
 import Image3 from '../img/green_career.png';
@@ -11,32 +12,60 @@ import Image4 from '../img/red_contact.png';
 import Image6 from '../img/logo512.png';
 import Image7 from '../img/gear_line.png';
 
-function TopContent(props) {
+const TopContent = (props) => {
 
   return (
-    <div>
-      <Box sx={{ width: '75%', mx: "auto", p: 2 }} className="unRotate">
+    <div id="topSelect">
+      <Box sx={{ width: '70%', maxWidth: '100%', mx: "auto", p: 2 }}>
         <Background
           backImg_1={Image7}
           backImg_2={Image6}
         />
-        <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
-          <TopLinkButton
-            contentImg={Image1}
-            title={'About'}
-          />
-          <TopLinkButton
-            contentImg={Image2}
-            title={'Skills'}
-          />
-          <TopLinkButton
-            contentImg={Image3}
-            title={'career'}
-          />
-          <TopLinkButton
-            contentImg={Image4}
-            title={'Contact'}
-          />
+        <Box sx={{ display: 'flex', width: '100%', maxWidth: '100%', flexWrap: 'wrap', justifyContent: 'center', flexDirection: { sm:'row', xs: 'column'}}}>
+          <Box sx={{ display: 'flex', width:{ xs:'90%', sm:'40%' }, maxWidth: '100%', flexDirection: 'column', mx: "auto"}}>
+            <TopLinkButton
+              contentImg={Image1}
+            />
+            <Link to="about" className="topSubAreaBox">
+              <TopSubArea
+                h2={'About'}
+                subTxt={'Aboutdammydammydammydammydammydammydammydammydammydammydammydammydammydammydammy'}
+              />
+            </Link>
+          </Box>
+          <Box sx={{ display: 'flex', width:{ xs:'90%', sm:'40%' }, maxWidth: '100%', flexDirection: 'column', mx: "auto"}}>
+            <TopLinkButton
+              contentImg={Image2} />
+            <Link to="skill" className="topSubAreaBox">
+              <TopSubArea
+                h2={'Skill'}
+                subTxt={'skilldammydammydammydammydammydammydammydammydammydammydammydammydammydammydammy'}
+                />
+            </Link>
+          </Box>
+        </Box>
+        <Box sx={{ display: 'flex', width: '100%', maxWidth: '100%', flexWrap: 'wrap', justifyContent: 'center', flexDirection: { sm:'row', xs: 'column'}}}>
+          <Box sx={{ display: 'flex', width:{ xs:'90%', sm:'40%' }, maxWidth: '100%', flexDirection: 'column', mx: "auto"}}>
+            <TopLinkButton
+              contentImg={Image3}
+            />
+            <Link to="career" className="topSubAreaBox">
+              <TopSubArea
+                h2={'Career'}
+                subTxt={'Aboutdammydammydammydammydammydammydammydammydammydammydammydammydammydammydammy'}
+              />
+            </Link>
+          </Box>
+          <Box sx={{ display: 'flex', width:{ xs:'90%', sm:'40%' }, maxWidth: '100%', flexDirection: 'column', mx: "auto"}}>
+            <TopLinkButton
+              contentImg={Image4} />
+            <Link to="contact" className="topSubAreaBox">
+              <TopSubArea
+                h2={'Contact'}
+                subTxt={'skilldammydammydammydammydammydammydammydammydammydammydammydammydammydammydammy'}
+                />
+            </Link>
+          </Box>
         </Box>
       </Box>
     </div>

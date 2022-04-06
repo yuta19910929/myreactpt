@@ -1,11 +1,11 @@
-import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
-import ReponsiveAppBar from './ReponsiveAppBar';
+import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
+import NavTabs from './NavTabs';
 
 const Header = () => {
   return (
-    <>
-      <ReponsiveAppBar />
-    </>
+    <header>
+      <NavTabs />
+    </header>
 	);
 }
 
