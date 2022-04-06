@@ -1,21 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,400;1,600&display=swap');
 
+/* Common */
+.txtColorW{
+  color: #fff!important;
+}
+
+p {
+  word-wrap: break-word;
+  line-height: 25px;}
+
+a {
+  text-decoration: none;
+
+}
+
 /* Header */
+
+.navh1{
+  font-size: 20px;
+  margin-top: 4px;
+}
+
+.nav a{
+  color: #fff!important;
+}
 
 .navLogo{
   width: 30px;
-  height: auto;
+  height: 30px;
+  margin-top: 2px;
 }
 
 /* TopContents */
 
-.LinkButoonBgColor{
+/*
+.LinkButtonBgColor{
   background-color: #fff;
 }
+*/
 
 .TopLinkImg{
-  width: 250px;
-  max-width: 70%;
+  width: 100%;
+  max-width: 100%;
   margin: 15px auto;
   margin-bottom: 5px;
   display: block;
@@ -28,11 +54,25 @@
   font-weight: bold;
 }
 
+.topSubAreaBox{
+  width: 90%;
+  max-width: 100%;
+  margin: -50px 20px 0 20px;
+}
+
+#topSelect{
+  margin: 50px 0;
+}
+
+#topSelect a{
+  color: #333;
+}
+
 /* Background */
 
 .contentsBg img{
   width: 400px;
-  max-width: 40%;
+  max-width: 50%;
   position: fixed;
   user-select: none;
   z-index: -1;
@@ -42,7 +82,7 @@
 .contentsBg_1{
   position: relative;
   top: -30%;
-  right: 20%;
+  right: 10%;
 }
 
 .contentsBg_2{
@@ -65,20 +105,6 @@
     transform: rotate(0deg);
   }
 }
-
-/*
-.contentsBg_1{
-  background-image: url(../img/gear.svg),
-    url(../img/logo512.png);
-  background-repeat: no-repeat;
-  background-size: 30%;
-  background-attachment: fixed;
-  background-position-x: calc(100% - 0em);
-  background-position-y: calc(100% - 5em);
-  height: 1000px;
-}
-
-*/
 
 /* Footer */
 .footer{
