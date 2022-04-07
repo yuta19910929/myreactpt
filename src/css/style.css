@@ -33,11 +33,33 @@ a {
 
 /* TopContents */
 
-/*
-.LinkButtonBgColor{
-  background-color: #fff;
+.topEyeCatch {
+  text-align: center;
+  display: inline-block;
+  background: linear-gradient(to left, #fff8dc, #800080);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 100px auto;
+  width: 100%;
+  max-width: 100%;
 }
-*/
+
+.topEyeCatch p{
+  font-size: 150px;
+  line-height: 1em;
+  margin: 0;
+}
+
+.topEyeCatch p span{
+  position: relative;
+  left: 15px;
+}
+
+@media screen and (max-width:480px) {
+  .topEyeCatch p{
+    font-size: 100px;
+  }
+}
 
 .TopLinkImg{
   width: 100%;
@@ -61,7 +83,7 @@ a {
 }
 
 #topSelect{
-  margin: 50px 0;
+  margin: 0 0 70px 0;
 }
 
 #topSelect a{
