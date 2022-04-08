@@ -44,6 +44,12 @@ a {
   max-width: 100%;
 }
 
+.topEyeCatch_c {
+  background: linear-gradient(to left, #fff8dc, #800080);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .topEyeCatch p{
   font-size: 150px;
   line-height: 1em;

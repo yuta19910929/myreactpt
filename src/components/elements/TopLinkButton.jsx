@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
 import { Grid } from '@material-ui/core';
 import { palette } from '@material-ui/system';
 import Box from '@mui/material/Box';
-import '../css/style.css';
+import '../../assets/css/style.css';
 
 const TopLinkButton = (props) => {
   return (
