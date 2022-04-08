@@ -3,7 +3,6 @@ import { TopContent, About, Skill, Career, Contact, Error } from './components/i
 
 const Router = () => {
   return (
-    <>
       <BrowserRouter>
         <Routes>
           <Route index element={<TopContent />} />
@@ -14,7 +13,6 @@ const Router = () => {
           <Route path='*' element={<Error />} />
         </Routes>
       </BrowserRouter>
-    </>
 	);
 }
 

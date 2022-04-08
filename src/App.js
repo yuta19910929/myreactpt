@@ -1,11 +1,9 @@
-import { React, useState, useEffect, useRef, useImperativeHandle, forwardRef } from "react";
+import { React } from "react";
 import './App.css';
-import "./css/style.css";
+import "./assets/css/style.css";
 import Router from './Router';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import TopContent from './components/TopContent';
-import About from './components/About';
+import Header from './components/header/Header';
+import Footer from './components/footer/Footer';
 
 function App() {
   return (

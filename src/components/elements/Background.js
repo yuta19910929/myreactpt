@@ -1,4 +1,4 @@
-import '../css/style.css';
+import '../../assets/css/style.css';
 
 const Background = (props) => {
   const {backImg_1, backImg_2} = props;

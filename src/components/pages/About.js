@@ -1,7 +1,7 @@
-import { Background } from './index';
+import { Background } from '../index';
 import Box from '@mui/material/Box';
-import Image6 from '../img/logo512.png';
-import Image7 from '../img/gear_line.png';
+import Image6 from '../../assets/img/logo512.png';
+import Image7 from '../../assets/img/gear_line.png';
 
 const About = () => {
 

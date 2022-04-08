@@ -1,10 +1,12 @@
+import { AppBar } from '@mui/material';
+import ResponsiveAppBar from './AppBar';
 import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
-import NavTabs from './NavTabs';
+
 
 const Header = () => {
   return (
     <header>
-      <NavTabs />
+      <ResponsiveAppBar />
     </header>
 	);
 }
