@@ -1,16 +1,7 @@
 import { Link } from "react-router-dom";
 import Box from '@mui/material/Box';
 import TopSubArea from '../elements/TopSubArea';
-import { IconContext } from 'react-icons';
-import { TopLinkButton, Background, EyeCatch, About, Skill, Career, Contact } from '../index';
-
-//img
-import Image1 from '../../assets/img/yellow_about.png';
-import Image2 from '../../assets/img/blue_skill.png';
-import Image3 from '../../assets/img/green_career.png';
-import Image4 from '../../assets/img/red_contact.png';
-import Image6 from '../../assets/img/logo512.png';
-import Image7 from '../../assets/img/gear_line.png';
+import { TopLinkButton, Background, EyeCatch, Image1, Image2, Image3, Image4, Image6, Image7} from '../index';
 
 const TopContent = (props) => {
 
