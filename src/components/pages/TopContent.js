@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Box from '@mui/material/Box';
 import TopSubArea from '../elements/TopSubArea';
-import { TopLinkButton, Background, EyeCatch, Image1, Image2, Image3, Image4, Image6, Image7} from '../index';
+import { TopLinkButton, Background, EyeCatch, Image1, Image2, Image3, Image4, Image6, Image7 } from '../index';
 
 const TopContent = (props) => {
 

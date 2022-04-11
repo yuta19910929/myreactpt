@@ -2,7 +2,7 @@
 
 export function RewriteRep(page) {
   let ReWrite;
-  if('Home' == page){
+  if('Home' === page){
     ReWrite = page.replace('Home','/')
   } else {
     ReWrite = page.toLowerCase()

@@ -1,17 +1,32 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { TopContent, About, Skill, Career, Contact, Error } from './components/index';
+
+const API_ENDPOINT = process.env.REACT_APP_API_ENDPOINT;
+console.log(API_ENDPOINT);
 
 const Router = () => {
   return (
       <BrowserRouter>
-        <Routes>
-          <Route index element={<TopContent />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/skill' element={<Skill />} />
-          <Route path='/career' element={<Career />} />
-          <Route path='/contact' element={<Contact />} />
-          <Route path='*' element={<Error />} />
-        </Routes>
+        <Switch>
+          <Route exact path="/">
+            <TopContent />
+          </Route>
+          <Route exact path="/about">
+            <About />
+          </Route>
+          <Route exact path="/skill">
+            <Skill />
+          </Route>
+          <Route exact path="/career">
+            <Career />
+          </Route>
+          <Route exact path="/contact">
+            <Contact />
+          </Route>
+          <Route path="/*">
+            <Error />
+          </Route>
+        </Switch>
       </BrowserRouter>
 	);
 }
