@@ -16,3 +16,4 @@ export {default as Image3} from '../assets/img/green_career.png';
 export {default as Image4} from '../assets/img/red_contact.png';
 export {default as Image6} from '../assets/img/logo512.png';
 export {default as Image7} from '../assets/img/gear_line.png';
+export {default as Image8} from '../assets/img/mail.svg';
