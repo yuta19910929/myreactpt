@@ -5,12 +5,19 @@
   color: #fff!important;
 }
 
-p {
+p,a{
   word-wrap: break-word;
+}
+
+p {
   line-height: 25px;}
 
 a {
-  text-decoration: none;
+  word-wrap: break-word;
+}
+
+.newLine {
+  white-space: pre-wrap;
 }
 
 .visible{
@@ -20,6 +27,20 @@ a {
 .invisible{
   display: none;
 }
+
+h3 {
+  padding: 1rem 2rem;
+  border-top: 6px double #000;
+  border-bottom: 6px double #000;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.taC{text-align: center!important;}
+.taL{text-align: left!important;}
+.taR{text-align: right!important;}
+
+.m-20{margin: 20px!important;}
 
 /* Header */
 
@@ -36,6 +57,38 @@ a {
   width: 30px;
   height: 30px;
   margin-top: 2px;
+}
+
+/* Column */
+
+.Column2{
+  vertical-align: middle;
+  display: inline;
+  position: relative;
+}
+
+.Column2.cyan-op{
+  background-color: rgba(0,255,255,0.3);
+}
+
+.Column2.magenta-op{
+  background-color: rgba(255,0,255,0.3);
+}
+
+.Column2 h3{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  padding: 20px;
+  font-size: 40px;
+  margin: 0;
+}
+
+@media screen and (max-width:660px) {
+  .Column2 h3{
+    font-size: 20px;
+  }
 }
 
 /* TopContents */
@@ -57,7 +110,7 @@ a {
   -webkit-text-fill-color: transparent;
 }
 
-.topEyeCatch p{
+.topEyeCatch p {
   font-size: 150px;
   line-height: 1em;
   margin: 0;
@@ -126,7 +179,7 @@ a {
   left: 70%;
 }
 
-/* アニメーション */
+/* Animation */
 
 .contentsBgSpin{
   animation: bg-rotate infinite 20s linear;

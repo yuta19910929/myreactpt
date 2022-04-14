@@ -68,6 +68,7 @@ const Contact = () => {
             <Box sx={{ mx:"auto", width: {sm:'50%', xs:'70%'} }}>
               <div className={isVisible ? 'visible' : 'invisible'}>
                 <h2>Contact</h2>
+                <p>お問い合わせはこちらからお願いいたします。</p>
                 <form onSubmit={onSubmit}>
                   <TextField className="contact-name" type="text" required label="氏名(必須)" fullWidth margin="normal" onChange={onChangeName} value={name} />
                   <TextField className="contact-mail" type="text" required label="メールアドレス(必須)" fullWidth margin="normal" onChange={onChangeMail} value={mail} />

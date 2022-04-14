@@ -1,5 +1,4 @@
 //Headerナビゲーション "Home" ⇨　"/" 置き換え
-
 export function RewriteRep(page) {
   let ReWrite;
   if('Home' === page){
