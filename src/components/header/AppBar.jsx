@@ -29,14 +29,18 @@ const ResponsiveAppBar = () => {
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <Box sx={{ mt: 0.7, display: 'flex' }}>
+          <Box sx={{ mt: 0.7,
+              display: 'flex' }}>
             <img src={ImageLogo} className="navLogo App-logo"/>
-            <Box sx={{ mt: 0, ml: 0.5, mr:3 }}>
+            <Box sx={{ mt: 0,
+                ml: 0.5,
+                mr:3 }}>
               <h1 className="navh1">MyReactPortfolio</h1>
             </Box>
           </Box>
 
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+          <Box sx={{ flexGrow: 1,
+              display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -72,13 +76,18 @@ const ResponsiveAppBar = () => {
               ))}
             </Menu>
           </Box>
-          <Box sx={{ mt: 0.7, display: {xs: "none", sx: 'flex' } }}>
+          <Box sx={{ mt: 0.7,
+              display: {xs: "none",
+              sx: 'flex' } }}>
             <img src={ImageLogo} className="navLogo App-logo"/>
-            <Box sx={{ mt: 0, ml: 0.5, mr:3 }}>
+            <Box sx={{ mt: 0,
+                ml: 0.5,
+                mr:3 }}>
               <h1 className="navh1">MyReactPortfolio</h1>
             </Box>
           </Box>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+          <Box sx={{ flexGrow: 1,
+              display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
               <Button
                 key={page}

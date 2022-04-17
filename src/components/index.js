@@ -13,6 +13,7 @@ export {default as H3} from './elements/H3'
 export {default as Container1Column} from './elements/Container1Column'
 export {default as Container2Column} from './elements/Container2Column'
 export {default as Container2ColumnRev} from './elements/Container2ColumnRev'
+export {default as BasicModal} from './elements/BasicModal'
 
 //img
 export {default as Image1} from '../assets/img/yellow_about.png';

@@ -5,7 +5,10 @@ import  "../../assets/css/style.css";
 const Container1Column = (props) => {
 
   return(
-    <Box sx={{ width: '70%', mx:'auto', mt:5, mb:9, display:{sm:'block'} }}>
+    <Box sx={{ width: '70%',
+      mx:'auto',
+      mt:5, mb:9,
+      display:{sm:'block'} }}>
       <H3
         H3={props.H3}
       />
