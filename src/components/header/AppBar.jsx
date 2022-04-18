@@ -12,7 +12,7 @@ import MenuItem from "@mui/material/MenuItem";
 import ImageLogo from '../../assets/img/logo512.png';
 import { RewriteRep } from '../helper';
 
-const pages = ["Home", "About", "Skill", "Career", "Contact"];
+const pages = ["Home", "About", "Skill", "Contact"];
 
 const ResponsiveAppBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);

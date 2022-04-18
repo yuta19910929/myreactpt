@@ -21,8 +21,13 @@ const BasicModal = (props) => {
   const handleClose = () => setOpen(false);
 
   return (
-    <div>
-      <Button sx={{ textTransform: 'capitalize'}} onClick={handleOpen}>{props.Title}</Button>
+    <>
+      <Button sx={{ textTransform: 'capitalize',
+        width:{ xs:'90%', sm:'30%' },
+        mb:3,
+        height:'200px',
+        border: 1,}}
+        onClick={handleOpen}>{props.Title}</Button>
       <Modal
         open={open}
         onClose={handleClose}
@@ -38,7 +43,7 @@ const BasicModal = (props) => {
           </Typography>
         </Box>
       </Modal>
-    </div>
+    </>
   );
 }
 

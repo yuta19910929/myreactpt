@@ -19,7 +19,16 @@ const Skill = () => {
             h2={'Skill'}
           />
         </Box>
-        <Box sx={{ width: {sm:'70%'}, maxWidth: '100%', mx: "auto", p: 2 }}>
+        <Box sx={{ width: {sm:'70%', xs:'100%'},
+          maxWidth: '100%',
+          mx: "auto",
+          mb: 4,
+          p: 2,
+          display: 'flex',
+          flexDirection: { xs:'column', sm:'row' },
+          flexWrap: 'wrap',
+          justifyContent: { sm:'space-evenly', xs:'center' }
+        }}>
           <BasicModal
             Title = {'HTML & CSS'}
             Content = {'dammydammydammydammydammydammy'}
