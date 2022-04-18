@@ -13,9 +13,21 @@ const TopContent = (props) => {
       />
       <EyeCatch />
       <div id="topSelect">
-        <Box sx={{ width: '70%', maxWidth: '100%', mx: "auto", p: 2 }}>
-          <Box sx={{ display: 'flex', width: '100%', maxWidth: '100%', flexWrap: 'wrap', justifyContent: 'center', flexDirection: { sm:'row', xs: 'column'}}}>
-            <Box sx={{ display: 'flex', width:{ xs:'90%', sm:'40%' }, maxWidth: '100%', flexDirection: 'column', mx: "auto"}}>
+        <Box sx={{ width: '70%',
+          maxWidth: '100%',
+          mx: "auto",
+          p: 2 }}>
+          <Box sx={{ display: 'flex',
+            width: '100%',
+            maxWidth: '100%',
+            flexWrap: 'wrap',
+            justifyContent: 'center',
+            flexDirection: { sm:'row', xs: 'column'}}}>
+            <Box sx={{ display: 'flex',
+              width:{ xs:'90%', sm:'40%' },
+              maxWidth: '100%',
+              flexDirection: 'column',
+              mx: "auto"}}>
               <TopLinkButton
                 contentImg={Image1}
               />
@@ -26,7 +38,11 @@ const TopContent = (props) => {
                 />
               </Link>
             </Box>
-            <Box sx={{ display: 'flex', width:{ xs:'90%', sm:'40%' }, maxWidth: '100%', flexDirection: 'column', mx: "auto"}}>
+            <Box sx={{ display: 'flex',
+              width:{ xs:'90%', sm:'40%' },
+              maxWidth: '100%',
+              flexDirection: 'column',
+              mx: "auto"}}>
               <TopLinkButton
                 contentImg={Image2} />
               <Link to="skill" className="topSubAreaBox">
@@ -37,8 +53,17 @@ const TopContent = (props) => {
               </Link>
             </Box>
           </Box>
-          <Box sx={{ display: 'flex', width: '100%', maxWidth: '100%', flexWrap: 'wrap', justifyContent: 'center', flexDirection: { sm:'row', xs: 'column'}}}>
-            <Box sx={{ display: 'flex', width:{ xs:'90%', sm:'40%' }, maxWidth: '100%', flexDirection: 'column', mx: "auto"}}>
+          <Box sx={{ display: 'flex',
+            width: '100%',
+            maxWidth: '100%',
+            flexWrap: 'wrap',
+            justifyContent: 'center',
+            flexDirection: { sm:'row', xs: 'column'}}}>
+            <Box sx={{ display: 'flex',
+              width:{ xs:'90%', sm:'40%' },
+              maxWidth: '100%',
+              flexDirection: 'column',
+              mx: "auto"}}>
               <TopLinkButton
                 contentImg={Image3}
               />
@@ -49,7 +74,11 @@ const TopContent = (props) => {
                 />
               </Link>
             </Box>
-            <Box sx={{ display: 'flex', width:{ xs:'90%', sm:'40%' }, maxWidth: '100%', flexDirection: 'column', mx: "auto"}}>
+            <Box sx={{ display: 'flex',
+            width:{ xs:'90%', sm:'40%' },
+            maxWidth: '100%',
+            flexDirection: 'column',
+            mx: "auto"}}>
               <TopLinkButton
                 contentImg={Image4} />
               <Link to="contact" className="topSubAreaBox">
