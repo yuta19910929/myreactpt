@@ -4,6 +4,19 @@ import { Image6, Image7, Background, Container2ColumnRev, BasicModal, H2 } from 
 
 const Skill = () => {
 
+  const skillitems = [
+    { 'title': 'HTML & CSS',
+      'content': 'dammydammydammy'},
+    { 'title': 'JavaScript',
+      'content': 'dammydammydammy'},
+    { 'title': 'jQuery',
+      'content': 'dammydammydammy'},
+    { 'title': 'React',
+      'content': 'dammydammydammy'},
+    { 'title': 'PHP',
+      'content': 'dammydammydammy'},
+  ];
+
   return (
     <>
       <Background
@@ -29,30 +42,12 @@ const Skill = () => {
           flexWrap: 'wrap',
           justifyContent: { sm:'space-evenly', xs:'center' }
         }}>
-          <BasicModal
-            Title = {'HTML & CSS'}
-            Content = {'dammydammydammydammydammydammy'}
+        {skillitems.map((item) => {
+          return <BasicModal
+            Title = {item.title}
+            Content = {item.content}
           />
-          <BasicModal
-            Title = {'JavaScript'}
-            Content = {'dammydammydammydammydammydammy'}
-          />
-          <BasicModal
-            Title = {'jQuery'}
-            Content = {'dammydammydammydammydammydammy'}
-          />
-          <BasicModal
-            Title = {'React'}
-            Content = {'dammydammydammydammydammydammy'}
-          />
-          <BasicModal
-            Title = {'PHP'}
-            Content = {'dammydammydammydammydammydammy'}
-          />
-          <BasicModal
-            Title = {'React'}
-            Content = {'dammydammydammydammydammydammy'}
-          />
+        })}
         </Box>
       </div>
     </>

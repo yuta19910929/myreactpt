@@ -2,7 +2,6 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { TopContent, About, Skill, Contact, Error } from './components/index';
 
 const API_ENDPOINT = process.env.REACT_APP_API_ENDPOINT;
-console.log(API_ENDPOINT);
 
 const Router = () => {
   return (
