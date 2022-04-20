@@ -1,6 +1,6 @@
 import * as React from "react";
 import { useState } from "react";
-import { Box, Button, Typography, Modal, } from '@mui/material';
+import { Box, Button, Typography, Modal } from '@mui/material';
 import { Type } from '../MuiCustam';
 
 const style = {
@@ -26,7 +26,7 @@ const BasicModal = (props) => {
         width:{ xs:'90%', sm:'30%' },
         mb:3,
         height:'200px',
-        border: 1,}}
+        border: 1}}
         onClick={handleOpen}>{props.Title}</Button>
       <Modal
         open={open}
