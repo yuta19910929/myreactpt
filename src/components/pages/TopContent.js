@@ -1,16 +1,28 @@
 import { Link } from "react-router-dom";
 import Box from '@mui/material/Box';
 import TopSubArea from '../elements/TopSubArea';
-import { TopLinkButton, Background, EyeCatch, Image1, Image2, Image3, Image4, Image6, Image7 } from '../index';
+import { TopLinkButton, EyeCatch, Image1, Image2, Image4 } from '../index';
+import "../../assets/css/style.css";
 
 const TopContent = (props) => {
 
+  const topitems = [
+    { 'link': '/About',
+      'Image': Image1,
+      'title': 'About',
+      'txt': 'Aboutdammydammydammy'},
+    { 'link': '/Skill',
+      'Image': Image2,
+      'title': 'Skill',
+      'txt': 'Skilldammydammydammy'},
+    { 'link': '/Contact',
+      'Image': Image4,
+      'title': 'Conact',
+      'txt': 'Contactdammydammydammy'},
+  ];
+
   return (
     <>
-      <Background
-        backImg_1={Image7}
-        backImg_2={Image6}
-      />
       <EyeCatch />
       <div id="topSelect">
         <Box sx={{ width: '70%',
@@ -23,71 +35,23 @@ const TopContent = (props) => {
             flexWrap: 'wrap',
             justifyContent: 'center',
             flexDirection: { sm:'row', xs: 'column'}}}>
-            <Box sx={{ display: 'flex',
-              width:{ xs:'90%', sm:'40%' },
-              maxWidth: '100%',
-              flexDirection: 'column',
-              mx: "auto"}}>
-              <TopLinkButton
-                contentImg={Image1}
-              />
-              <Link to="about" className="topSubAreaBox">
-                <TopSubArea
-                  h2={'About'}
-                  subTxt={'Aboutdammydammydammydammydammydammydammydammydammydammydammydammydammydammydammy'}
-                />
-              </Link>
-            </Box>
-            <Box sx={{ display: 'flex',
-              width:{ xs:'90%', sm:'40%' },
-              maxWidth: '100%',
-              flexDirection: 'column',
-              mx: "auto"}}>
-              <TopLinkButton
-                contentImg={Image2} />
-              <Link to="skill" className="topSubAreaBox">
-                <TopSubArea
-                  h2={'Skill'}
-                  subTxt={'skilldammydammydammydammydammydammydammydammydammydammydammydammydammydammydammy'}
+            {topitems.map((item) => {
+              return <Box sx={{ display: 'flex',
+                width:{ xs:'90%', sm:'30%' },
+                maxWidth: '100%',
+                flexDirection: 'column',
+                mx: "auto"}}>
+                <Link to={item.link} className="topSubAreaBox">
+                  <TopLinkButton
+                    contentImg={item.Image}
                   />
-              </Link>
-            </Box>
-          </Box>
-          <Box sx={{ display: 'flex',
-            width: '100%',
-            maxWidth: '100%',
-            flexWrap: 'wrap',
-            justifyContent: 'center',
-            flexDirection: { sm:'row', xs: 'column'}}}>
-            <Box sx={{ display: 'flex',
-              width:{ xs:'90%', sm:'40%' },
-              maxWidth: '100%',
-              flexDirection: 'column',
-              mx: "auto"}}>
-              <TopLinkButton
-                contentImg={Image3}
-              />
-              <Link to="career" className="topSubAreaBox">
-                <TopSubArea
-                  h2={'Career'}
-                  subTxt={'Aboutdammydammydammydammydammydammydammydammydammydammydammydammydammydammydammy'}
-                />
-              </Link>
-            </Box>
-            <Box sx={{ display: 'flex',
-            width:{ xs:'90%', sm:'40%' },
-            maxWidth: '100%',
-            flexDirection: 'column',
-            mx: "auto"}}>
-              <TopLinkButton
-                contentImg={Image4} />
-              <Link to="contact" className="topSubAreaBox">
-                <TopSubArea
-                  h2={'Contact'}
-                  subTxt={'skilldammydammydammydammydammydammydammydammydammydammydammydammydammydammydammy'}
+                  <TopSubArea
+                    h2={item.title}
+                    subTxt={item.txt}
                   />
-              </Link>
-            </Box>
+                </Link>
+              </Box>
+            })}
           </Box>
         </Box>
       </div>

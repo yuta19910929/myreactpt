@@ -1,7 +1,7 @@
 import{ init, send } from '@emailjs/browser';
 import { useState } from "react";
 import { TextField, Box, Button } from '@mui/material';
-import { Image4, Image6, Image7, Background } from '../index';
+import { Image4 } from '../index';
 import  "../../assets/css/style.css";
 
 const Contact = () => {
@@ -51,21 +51,16 @@ const Contact = () => {
         e.preventDefault();
         sendEmail();
         updateVisibility();
-        console.log("push submit");
     }
 
     return (
       <>
-        <Background
-          backImg_1={Image7}
-          backImg_2={Image6}
-        />
         <div className="contact-page">
-          <Box sx={{ display: 'flex', width: {sm: '70%', xs:'100%'}, mx:"auto", mt:10, mb:10, flexDirection:{sm:'row', xs:'column'}}}>
+          <Box sx={{ display: 'flex', width: {sm: '70%', xs:'100%'}, mx:"auto", mt:0, mb:10, flexDirection:{sm:'row', xs:'column'}}}>
             <Box sx={{mx:"auto", width: {sm:'50%', xs:'70%'}, display:{sm:'block' ,xs:'none'} }}>
-              <img src={Image4} style={{width: '50%', margin:'10%'}}/>
+              <img src={Image4} style={{width: '50%', margin:'40% 10% 10% 10%'}}/>
             </Box>
-            <Box sx={{ mx:"auto", width: {sm:'50%', xs:'70%'} }}>
+            <Box sx={{ mx:"auto", mt:10, width: {sm:'50%', xs:'70%'} }}>
               <div className={isVisible ? 'visible' : 'invisible'}>
                 <h2>Contact</h2>
                 <p>お問い合わせはこちらからお願いいたします。</p>

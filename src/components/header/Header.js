@@ -5,7 +5,7 @@ import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
 
 const Header = () => {
   return (
-    <header>
+    <header id="header">
       <ResponsiveAppBar />
     </header>
 	);

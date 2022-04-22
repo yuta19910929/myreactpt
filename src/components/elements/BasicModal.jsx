@@ -1,7 +1,6 @@
 import * as React from "react";
 import { useState } from "react";
-import { Box, Button, Typography, Modal } from '@mui/material';
-import { Type } from '../MuiCustam';
+import { Box, Button, Typography, Modal, Rating } from '@mui/material';
 
 const style = {
   position: 'absolute',
@@ -26,8 +25,11 @@ const BasicModal = (props) => {
         width:{ xs:'90%', sm:'30%' },
         mb:3,
         height:'200px',
-        border: 1}}
-        onClick={handleOpen}>{props.Title}</Button>
+        border: 1,
+        display: 'block'}}
+        onClick={handleOpen}>{props.Title}<br />
+      <Rating name="read-only" value={props.Star} readOnly />
+      </Button>
       <Modal
         open={open}
         onClose={handleClose}

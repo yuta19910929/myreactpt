@@ -1,15 +1,11 @@
 import { Box } from '@mui/material';
-import { Image6, Image7, Background, Container1Column, Container2Column, Container2ColumnRev, H2 } from '../index';
+import { Container1Column, Container2Column, Container2ColumnRev, Career, H2 } from '../index';
 import  "../../assets/css/style.css";
 
 const About = () => {
 
   return (
     <>
-      <Background
-        backImg_1={Image7}
-        backImg_2={Image6}
-      />
       <div className="about-page">
         <Box sx={{ width: {sm:'70%'}, maxWidth: '100%', mx: "auto", p: 2 }}>
           <H2
