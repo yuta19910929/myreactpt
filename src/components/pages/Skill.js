@@ -1,28 +1,28 @@
 import { Box } from '@mui/material';
-import { useState } from "react";
-import { Image6, Image7, Background, Container2ColumnRev, BasicModal, H2 } from '../index';
+import { BasicModal, H2 } from '../index';
 
 const Skill = () => {
 
   const skillitems = [
     { 'title': 'HTML & CSS',
-      'content': 'dammydammydammy'},
+      'content': 'dammydammydammy',
+      'Star': 5},
     { 'title': 'JavaScript',
-      'content': 'dammydammydammy'},
+      'content': 'dammydammydammy',
+      'Star': 3},
     { 'title': 'jQuery',
-      'content': 'dammydammydammy'},
+      'content': 'dammydammydammy',
+      'Star': 3},
     { 'title': 'React',
-      'content': 'dammydammydammy'},
+      'content': 'dammydammydammy',
+      'Star': 3},
     { 'title': 'PHP',
-      'content': 'dammydammydammy'},
+      'content': 'dammydammydammy',
+      'Star': 2},
   ];
 
   return (
     <>
-      <Background
-        backImg_1={Image7}
-        backImg_2={Image6}
-      />
       <div className="skill-page">
         <Box sx={{ width: {sm:'70%'},
           maxWidth: '100%',
@@ -46,6 +46,7 @@ const Skill = () => {
           return <BasicModal
             Title = {item.title}
             Content = {item.content}
+            Star = {item.Star}
           />
         })}
         </Box>

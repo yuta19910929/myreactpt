@@ -1,9 +1,10 @@
 const Error = () => {
 
   return (
-    <div>
+    <>
       <p>Error</p>
-    </div>
+      <p>リクエストされたページは存在しません。</p>
+    </>
 	);
 }
 

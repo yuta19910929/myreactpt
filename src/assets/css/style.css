@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,400;1,600&family=Roboto+Condensed:ital,wght@0,400;1,300&display=swap');
 
 /* Common */
 .txtColorW{
@@ -7,6 +7,7 @@
 
 p,a{
   word-wrap: break-word;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 p {
@@ -14,6 +15,7 @@ p {
 
 a {
   word-wrap: break-word;
+  text-decoration: none;
 }
 
 .newLine {
@@ -154,6 +156,18 @@ h3 {
 
 #topSelect a{
   color: #333;
+}
+
+/* About */
+
+.careerStyle{
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+
+.careerStyle li{
+  list-style: none;
 }
 
 /* Background */
