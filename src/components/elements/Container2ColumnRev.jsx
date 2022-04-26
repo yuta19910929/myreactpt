@@ -20,6 +20,7 @@ const Container2ColumnRev = (props) => {
         display:{sm:'block'}
       }}>
         <p className="m-20">{props.Txt}</p>
+        <p className="m-20">{props.Txt_2}</p>
       </Box>
       <Box sx={{
           mx:'auto',
