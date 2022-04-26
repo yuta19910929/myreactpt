@@ -13,6 +13,9 @@ export {default as Container1Column} from './elements/Container1Column'
 export {default as Container2Column} from './elements/Container2Column'
 export {default as Container2ColumnRev} from './elements/Container2ColumnRev'
 export {default as BasicModal} from './elements/BasicModal'
+export {default as ScrollToTop} from './elements/ScrollToTop'
+export {default as CustomizedTables} from './elements/CustomizedTables'
+export {default as careers} from '../data/aboutData'
 
 //img
 export {default as Image1} from '../assets/img/yellow_about.png';

@@ -5,7 +5,7 @@
   color: #fff!important;
 }
 
-p,a{
+p,a,h2,h3{
   word-wrap: break-word;
   font-family: 'Roboto Condensed', sans-serif;
 }
@@ -18,17 +18,8 @@ a {
   text-decoration: none;
 }
 
-.newLine {
-  white-space: pre-wrap;
-}
-
-.visible{
-  display: block;
-}
-
-.invisible{
-  display: none;
-}
+.visible{display: block;}
+.invisible{ display: none;}
 
 h3 {
   padding: 1rem 2rem;
@@ -38,11 +29,15 @@ h3 {
   margin-bottom: 5px;
 }
 
+.w70{width: 70%!important;}
+
 .taC{text-align: center!important;}
 .taL{text-align: left!important;}
 .taR{text-align: right!important;}
 
+.m-0a{margin: 0 auto;}
 .m-20{margin: 20px!important;}
+.mt-50{margin-top: 50px!important;}
 
 /* Header */
 

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Box from '@mui/material/Box';
 import TopSubArea from '../elements/TopSubArea';
+import { returnCodeToBr } from '../helper.js';
 import { TopLinkButton, EyeCatch, Image1, Image2, Image4 } from '../index';
 import "../../assets/css/style.css";
 
@@ -10,15 +11,15 @@ const TopContent = (props) => {
     { 'link': '/About',
       'Image': Image1,
       'title': 'About',
-      'txt': 'Aboutdammydammydammy'},
+      'txt': '簡単な自己紹介とキャリアについて'},
     { 'link': '/Skill',
       'Image': Image2,
       'title': 'Skill',
-      'txt': 'Skilldammydammydammy'},
+      'txt': 'これまでに勉強してきた言語や経験について'},
     { 'link': '/Contact',
       'Image': Image4,
       'title': 'Conact',
-      'txt': 'Contactdammydammydammy'},
+      'txt': 'お問合せフォームはこちら'},
   ];
 
   return (
