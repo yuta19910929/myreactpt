@@ -26,10 +26,6 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
   },
 }));
 
-const createData = ( date, business, language, tool ) => {
-  return { date, business, language, tool };
-}
-
 const CustomizedTables = (props) => {
   return (
     <>
@@ -50,7 +46,7 @@ const CustomizedTables = (props) => {
           </TableHead>
           <TableBody>
             {careers.map((item) => (
-              <StyledTableRow key={props.business}>
+              <StyledTableRow key={item.business}>
                 <StyledTableCell component="th" scope="row">
                   {item.date}
                 </StyledTableCell>

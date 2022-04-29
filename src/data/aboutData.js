@@ -12,7 +12,7 @@ const careers = [
   { 'date': '2019年9月〜2022年3月',
     'business': returnCodeToBr('HP・LP制作・運用・修正\n バナー制作・画像修正\n 社内業務システム改修'),
     'language': returnCodeToBr('HTML5\n CSS3\n JavaScript\n jQuery\n PHP\n VBA\n'),
-    'tool': returnCodeToBr('DreamWeaver\n Atom\n Photoshop\n illustrator\n Transmit\n FileZilla\n WordPress\n')},
+    'tool': returnCodeToBr('DreamWeaver\n Atom\n Photoshop\n illustrator\n Transmit\n FileZilla\n WordPress\n EXCEL')},
   ];
 
 export default careers;

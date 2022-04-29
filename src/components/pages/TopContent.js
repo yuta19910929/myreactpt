@@ -23,7 +23,7 @@ const TopContent = (props) => {
   ];
 
   return (
-    <>
+    <div className="topContent">
       <EyeCatch />
       <div id="topSelect">
         <Box sx={{ width: '70%',
@@ -56,7 +56,7 @@ const TopContent = (props) => {
           </Box>
         </Box>
       </div>
-    </>
+    </div>
 	);
 }
 

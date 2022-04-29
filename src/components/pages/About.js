@@ -8,7 +8,14 @@ const About = () => {
   return (
     <>
       <div className="about-page">
-        <Box sx={{ width: {sm:'70%'}, maxWidth: '100%', mx: "auto", p: 2 }}>
+        <Box sx={{
+          width: {sm:'70%'},
+          maxWidth: '100%',
+          mx: "auto",
+          mt:10,
+          mb:10,
+          textAlign:'center',
+          p: 2 }}>
           <H2
             h2={'About'}
           />

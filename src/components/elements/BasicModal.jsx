@@ -26,9 +26,10 @@ const BasicModal = (props) => {
         mb:3,
         height:'200px',
         border: 1,
-        display: 'block'}}
+        display: 'block',
+        fontSize: 25}}
         onClick={handleOpen}>{props.Title}<br />
-      <Rating name="read-only" value={props.Star} readOnly />
+        <Rating name="read-only" value={props.Star} readOnly />
       </Button>
       <Modal
         open={open}
