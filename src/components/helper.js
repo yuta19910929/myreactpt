@@ -13,9 +13,9 @@ export const RewriteRep = (page) => {
 
 //改行コード\nを、改行のHTMLタグ<br />に変換（ ライブラリ：html-react-parser ）
 export const returnCodeToBr = (text) => {
-if (text === "") {
+  if (text === "") {
     return text
-} else {
+  } else {
     return HTMLReactParser(text.replace(/\r?\n/g, '<br/>'))
-}
+  }
 };

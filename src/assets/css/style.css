@@ -21,6 +21,15 @@ a {
 .visible{display: block;}
 .invisible{ display: none;}
 
+h2 {
+  padding: 30px 60px;
+  border: 2px solid #00bfff;
+  border-image: linear-gradient(to right, #00bfff 0%, #ff00ff 100%);
+  border-image-slice: 1;
+  display: inline;
+  font-size: 50px;
+}
+
 h3 {
   padding: 1rem 2rem;
   border-top: 6px double #000;
@@ -89,6 +98,12 @@ h3 {
 }
 
 /* TopContents */
+
+.topContent h2{
+  padding: 0;
+  border: none;
+  font-size: 30px;
+}
 
 .topEyeCatch {
   text-align: center;

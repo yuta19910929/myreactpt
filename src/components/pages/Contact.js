@@ -56,29 +56,63 @@ const Contact = () => {
     return (
       <>
         <div className="contact-page">
-          <Box sx={{ display: 'flex', width: {sm: '70%', xs:'100%'}, mx:"auto", mt:0, mb:10, flexDirection:{sm:'row', xs:'column'}}}>
-            <Box sx={{mx:"auto", width: {sm:'50%', xs:'70%'}, display:{sm:'block' ,xs:'none'} }}>
-              <img src={Image4} style={{width: '50%', margin:'40% 10% 10% 10%'}}/>
-            </Box>
-            <Box sx={{ mx:"auto", mt:10, width: {sm:'50%', xs:'70%'} }}>
-              <div className={isVisible ? 'visible' : 'invisible'}>
-                <h2>Contact</h2>
-                <p>お問い合わせはこちらからお願いいたします。</p>
-                <form onSubmit={onSubmit}>
-                  <TextField className="contact-name" type="text" required label="氏名(必須)" fullWidth margin="normal" onChange={onChangeName} value={name} />
-                  <TextField className="contact-mail" type="text" required label="メールアドレス(必須)" fullWidth margin="normal" onChange={onChangeMail} value={mail} />
-                  <TextField className="contact-message" type="text" required label="お問い合わせ内容(必須)" fullWidth margin="normal" onChange={onChangeMessage} value={message} />
-                  <Button variant="contained" className="contact-submit" sx={{ mt:5 }} type="submit">送信</Button>
-                </form>
-              </div>
-              <div className={isVisible2 ? 'visible' : 'invisible'}>
-                <Box alignItems="center">
+          <Box sx={{
+              mx: "auto",
+              mt: 10,
+              mb: 10,
+              width: {sm:'50%', xs:'70%'} }}>
+            <div className={isVisible ? 'visible' : 'invisible'}>
+              <Box sx={{ width: {sm:'70%'},
+                maxWidth: '100%',
+                mx:'auto',
+                mt:10,
+                mb:10,
+                textAlign:'center',
+                p: 2 }}>
                   <h2>Contact</h2>
-                  <p>送信が完了しました。<br />
-                  ご連絡ありがとうございました。</p>
+              </Box>
+              <p>お問い合わせはこちらからお願いいたします。</p>
+              <form onSubmit={onSubmit}>
+                <TextField
+                  className="contact-name"
+                  type="text"
+                  required label="氏名(必須)"
+                  fullWidth margin="normal" onChange={onChangeName}
+                  value={name} />
+                <TextField
+                  className="contact-mail"
+                  type="text"
+                  required label="メールアドレス(必須)" fullWidth margin="normal" onChange={onChangeMail}
+                  value={mail} />
+                <TextField
+                  className="contact-message"
+                  type="text"
+                  required label="お問い合わせ内容(必須)" fullWidth margin="normal" onChange={onChangeMessage}
+                  value={message}
+                  multiline
+                  rows={10}/>
+                <Box sx={{ width: '100%', textAlign:'center' }}>
+                  <Button
+                    variant="contained"
+                    className="contact-submit"
+                    sx={{
+                      width: '40%',
+                      height: '50px',
+                      mx:0,
+                      mt:5 }}
+                    type="submit">送信</Button>
                 </Box>
-              </div>
-            </Box>
+              </form>
+            </div>
+            <div
+              className={isVisible2 ? 'visible' : 'invisible'}>
+              <Box
+                alignItems="center">
+                <h2>Contact</h2>
+                <p>送信が完了しました。<br />
+                ご連絡ありがとうございました。</p>
+              </Box>
+            </div>
           </Box>
         </div>
       </>
