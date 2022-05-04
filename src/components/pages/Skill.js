@@ -20,6 +20,9 @@ const Skill = () => {
     { 'title': 'PHP',
       'content': 'PHPはプログラミング学習サイト「Progate」さんで基礎の部分を学びました。\n 実務ではWordPressのカスタマイズ、運用で使用していました。\n しかし、特有WordPress特有のメソッドなどがほとんどで、あまりPHPをやっている気がせず・・。といった感覚です。 \n PHPLaravelにも関心がありますので、今後深掘りしていきたいと思っています。',
       'star': 2},
+    { 'title': 'SQL',
+      'content': 'SQLは以前に会社の研修で基本的な構文の学習をしました。\n（実際にデータを作ったり検索して取得したりするなど）\n 現状業務で実際に使用したことはありません。',
+      'star': 2},
     { 'title': 'Java',
       'content': '一番初めにプログラミングを勉強するときに一番最初に学びました。\n Javaを初めに触ったことにより、JavaScriptだけでは知り得ない知識を得られたのは自分の中では大きかったと思っています。\n しかし、簡単な計算アプリを作ったきりそれ以降いじらずにいます。',
       'star': 1},
@@ -47,7 +50,7 @@ const Skill = () => {
           display: 'flex',
           flexDirection: { xs:'column', sm:'row' },
           flexWrap: 'wrap',
-          justifyContent: { sm:'space-evenly', xs:'center' }
+          justifyContent: { sm:'space-between', xs:'center' }
         }}>
         {skillitems.map((item) => {
           return <BasicModal
