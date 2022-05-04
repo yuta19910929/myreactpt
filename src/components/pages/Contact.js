@@ -1,7 +1,6 @@
 import{ init, send } from '@emailjs/browser';
 import { useState } from "react";
 import { TextField, Box, Button } from '@mui/material';
-import { Image4 } from '../index';
 import  "../../assets/css/style.css";
 
 const Contact = () => {
@@ -61,33 +60,36 @@ const Contact = () => {
               mt: 10,
               mb: 10,
               width: {sm:'50%', xs:'70%'} }}>
-            <div className={isVisible ? 'visible' : 'invisible'}>
-              <Box sx={{ width: {sm:'70%'},
-                maxWidth: '100%',
-                mx:'auto',
-                mt:10,
-                mb:10,
-                textAlign:'center',
-                p: 2 }}>
-                  <h2>Contact</h2>
-              </Box>
+            <Box sx={{ width: {sm:'70%'},
+              maxWidth: '100%',
+              mx:'auto',
+              mt:10,
+              mb:10,
+              textAlign:'center',
+              p: 2 }}>
+                <h2>Contact</h2>
+            </Box>
+              <div className={isVisible ? 'visible' : 'invisible'}>
               <p>お問い合わせはこちらからお願いいたします。</p>
               <form onSubmit={onSubmit}>
                 <TextField
                   className="contact-name"
                   type="text"
                   required label="氏名(必須)"
-                  fullWidth margin="normal" onChange={onChangeName}
+                  fullWidth margin="normal"
+                  onChange={onChangeName}
                   value={name} />
                 <TextField
                   className="contact-mail"
                   type="text"
-                  required label="メールアドレス(必須)" fullWidth margin="normal" onChange={onChangeMail}
+                  required label="メールアドレス(必須)"
+                  fullWidth margin="normal" onChange={onChangeMail}
                   value={mail} />
                 <TextField
                   className="contact-message"
                   type="text"
-                  required label="お問い合わせ内容(必須)" fullWidth margin="normal" onChange={onChangeMessage}
+                  required label="お問い合わせ内容(必須)"
+                  fullWidth margin="normal" onChange={onChangeMessage}
                   value={message}
                   multiline
                   rows={10}/>
@@ -106,9 +108,7 @@ const Contact = () => {
             </div>
             <div
               className={isVisible2 ? 'visible' : 'invisible'}>
-              <Box
-                alignItems="center">
-                <h2>Contact</h2>
+              <Box　alignItems="center">
                 <p>送信が完了しました。<br />
                 ご連絡ありがとうございました。</p>
               </Box>

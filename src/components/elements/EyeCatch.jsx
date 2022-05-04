@@ -1,6 +1,6 @@
 import "../../assets/css/style.css";
 import React, { useEffect, useRef } from "react";
-import {gsap} from "gsap";
+import {gsap} from "gsap"; //GSAP
 
 const EyeCatch = () => {
   const topEyeCatch = useRef();

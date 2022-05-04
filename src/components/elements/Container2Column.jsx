@@ -11,7 +11,7 @@ const Container2Column = (props) => {
       width: '100%',
       mx:"auto",
       mt:0,
-      mb:0,
+      mb:{sm:0, xs:5},
       flexDirection:{sm:'row', xs:'column'}
     }}>
       <Box sx={{
