@@ -11,17 +11,9 @@ const Container2ColumnRev = (props) => {
       width: '100%',
       mx:"auto",
       mt:0,
-      mb:0,
-      flexDirection:{sm:'row', xs:'column-reverse'}
+      mb:{sm:0, xs:5},
+      flexDirection:{sm:'row-reverse', xs:'column'}
     }}>
-      <Box sx={{
-        ml:0,
-        width:{sm:'50%', xs:'100%'},
-        display:{sm:'block'}
-      }}>
-        <p className="m-20">{props.Txt}</p>
-        <p className="m-20">{props.Txt_2}</p>
-      </Box>
       <Box sx={{
           mx:'auto',
           mb:0,
@@ -33,7 +25,15 @@ const Container2ColumnRev = (props) => {
         className={props.Style}>
         <H3
           H3={props.H3}
-          />
+        />
+      </Box>
+      <Box sx={{
+        ml:0,
+        width:{sm:'50%', xs:'100%'},
+        display:{sm:'block'}
+      }}>
+        <p className="m-20">{props.Txt}</p>
+        <p className="m-20">{props.Txt_2}</p>
       </Box>
     </Box>
   )

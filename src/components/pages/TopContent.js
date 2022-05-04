@@ -15,7 +15,7 @@ const TopContent = (props) => {
     { 'link': '/Skill',
       'Image': Image2,
       'title': 'Skill',
-      'txt': 'これまでに勉強してきた言語や経験について'},
+      'txt': 'これまでに勉強してきた言語やツールについて'},
     { 'link': '/Contact',
       'Image': Image4,
       'title': 'Conact',
@@ -41,7 +41,8 @@ const TopContent = (props) => {
                 width:{ xs:'90%', sm:'30%' },
                 maxWidth: '100%',
                 flexDirection: 'column',
-                mx: "auto"}}>
+                mx: "auto",
+                mb: 5}}>
                 <Link to={item.link} className="topSubAreaBox">
                   <TopLinkButton
                     contentImg={item.Image}

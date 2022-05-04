@@ -9,7 +9,7 @@ const About = () => {
     <>
       <div className="about-page">
         <Box sx={{
-          width: {sm:'70%'},
+          width: {sm:'80%'},
           maxWidth: '100%',
           mx: "auto",
           mt:10,

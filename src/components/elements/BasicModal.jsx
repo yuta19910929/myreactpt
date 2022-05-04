@@ -27,7 +27,8 @@ const BasicModal = (props) => {
         height:'200px',
         border: 1,
         display: 'block',
-        fontSize: 25}}
+        fontSize: 25,
+        fontWeight: 'bold'}}
         onClick={handleOpen}>{props.Title}<br />
         <Rating name="read-only" value={props.Star} readOnly />
       </Button>
@@ -38,9 +39,12 @@ const BasicModal = (props) => {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <Typography id="modal-modal-title">
+          <Typography id="modal-modal-title" sx={{fontSize: 25, fontWeight: 'bold'}}>
             {props.Title}
           </Typography>
+          <Box sx={{mt:2}}>
+            <Rating name="read-only" value={props.Star} readOnly />
+          </Box>
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
             {props.Content}
           </Typography>

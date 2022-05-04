@@ -1,5 +1,5 @@
 import * as React from "react";
-import { AppBar, Box, Toolbar, IconButton, Typography, Menu, Container, Button, MenuItem } from '@mui/material';
+import { Link, AppBar, Box, Toolbar, IconButton, Typography, Menu, Container, Button, MenuItem } from '@mui/material';
 import MenuIcon from "@mui/icons-material/Menu";
 import ImageLogo from '../../assets/img/logo512.png';
 import { RewriteRep } from '../helper';
@@ -63,7 +63,7 @@ const ResponsiveAppBar = () => {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                  <Link href={RewriteRep(page)} underline="none" textAlign="center">{page}</Link>
                 </MenuItem>
               ))}
             </Menu>
@@ -72,20 +72,22 @@ const ResponsiveAppBar = () => {
               display: {xs: "none",
               sx: 'flex' } }}>
             <img src={ImageLogo} className="navLogo App-logo"/>
-            <Box sx={{ mt: 0,
+            <Box sx={{
+                mt: 0,
                 ml: 0.5,
                 mr:3 }}>
               <h1 className="navh1">MyReactPortfolio</h1>
             </Box>
           </Box>
-          <Box sx={{ flexGrow: 1,
-              display: { xs: "none", md: "flex" } }}>
+          <Box sx={{
+              display: { xs: "none", md: "flex" }
+            }}>
             {pages.map((page) => (
               <Button
                 key={page}
                 href={RewriteRep(page)}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 1, color: "white", display: "block" }}
+                sx={{ color: "white", display: "block" }}
               >
                 {page}
               </Button>
