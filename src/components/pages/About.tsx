@@ -1,6 +1,7 @@
+import React from 'react';
 import { Box } from '@mui/material';
 import { returnCodeToBr } from '../helper.js';
-import { Container1Column, Container2Column, Container2ColumnRev, Career, CustomizedTables, H2 } from '../index';
+import { Container1Column, Container2Column, Container2ColumnRev, CustomizedTables, H2 } from '../index';
 import  "../../assets/css/style.css";
 
 const About = () => {
@@ -17,12 +18,12 @@ const About = () => {
           textAlign:'center',
           p: 2 }}>
           <H2
-            h2={'About'}
+            H2={'About'}
           />
         </Box>
           <Container1Column
             H3={'このサイトについて'}
-            Txt={returnCodeToBr('このサイトはReact + Material UI + GSAPで制作をしたポートフォリオサイトです。\n 自己紹介サイトが今までなかったのでReactで制作をしてみました。')}
+            Txt={returnCodeToBr('このサイトはReact + Material UIで制作をしたポートフォリオサイトです。\n 自己紹介サイトが今までなかったのでReactで制作をしてみました。')}
           />
           <Container2Column
             H3={'プロフィール'}

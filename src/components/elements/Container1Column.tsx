@@ -1,8 +1,10 @@
+import React from 'react';
 import { Box } from '@mui/material';
 import { H3 } from '../index';
 import  "../../assets/css/style.css";
+import { commonType } from '../../types/index';
 
-const Container1Column = (props) => {
+const Container1Column = (props: commonType) => {
 
   return(
     <Box sx={{ width: '70%',

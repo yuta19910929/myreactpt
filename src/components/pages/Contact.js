@@ -93,22 +93,21 @@ const Contact = () => {
                   value={message}
                   multiline
                   rows={10}/>
-                <Box sx={{ width: '100%', textAlign:'center' }}>
+                <Box sx={{ width:'100%', textAlign:'center' }}>
                   <Button
                     variant="contained"
                     className="contact-submit"
                     sx={{
-                      width: '40%',
-                      height: '50px',
+                      width:'40%',
+                      height:'50px',
                       mx:0,
                       mt:5 }}
                     type="submit">送信</Button>
                 </Box>
               </form>
             </div>
-            <div
-              className={isVisible2 ? 'visible' : 'invisible'}>
-              <Box　alignItems="center">
+            <div className={isVisible2 ? 'visible' : 'invisible'}>
+              <Box alignItems="center">
                 <p>送信が完了しました。<br />
                 ご連絡ありがとうございました。</p>
               </Box>

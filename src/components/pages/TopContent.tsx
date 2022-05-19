@@ -1,26 +1,12 @@
+import React from 'react';
 import { Link } from "react-router-dom";
 import Box from '@mui/material/Box';
 import TopSubArea from '../elements/TopSubArea';
-import { returnCodeToBr } from '../helper.js';
-import { TopLinkButton, EyeCatch, Image1, Image2, Image4 } from '../index';
+import { TopLinkButton, EyeCatch } from '../index';
 import "../../assets/css/style.css";
+import { topitems } from '../../data/Data';
 
-const TopContent = (props) => {
-
-  const topitems = [
-    { 'link': '/About',
-      'Image': Image1,
-      'title': 'About',
-      'txt': '簡単な自己紹介とキャリアについて'},
-    { 'link': '/Skill',
-      'Image': Image2,
-      'title': 'Skill',
-      'txt': 'これまでに勉強してきた言語やツールについて'},
-    { 'link': '/Contact',
-      'Image': Image4,
-      'title': 'Conact',
-      'txt': 'お問合せフォームはこちら'},
-  ];
+const TopContent = () => {
 
   return (
     <div className="topContent">
@@ -35,21 +21,21 @@ const TopContent = (props) => {
             maxWidth: '100%',
             flexWrap: 'wrap',
             justifyContent: 'center',
-            flexDirection: { sm:'row', xs: 'column'}}}>
+            flexDirection: { sm:'row', xs: 'column'} }}>
             {topitems.map((item) => {
               return <Box sx={{ display: 'flex',
                 width:{ xs:'90%', sm:'30%' },
                 maxWidth: '100%',
                 flexDirection: 'column',
                 mx: "auto",
-                mb: 5}}>
+                mb: 5 }}>
                 <Link to={item.link} className="topSubAreaBox">
                   <TopLinkButton
                     contentImg={item.Image}
                   />
                   <TopSubArea
-                    h2={item.title}
-                    subTxt={item.txt}
+                    H2={item.Title}
+                    subTxt={item.Txt}
                   />
                 </Link>
               </Box>
