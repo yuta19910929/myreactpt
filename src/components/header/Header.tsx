@@ -1,15 +1,15 @@
-import * as React from "react";
-import { Link, AppBar, Box, Toolbar, IconButton, Typography, Menu, Container, Button, MenuItem } from '@mui/material';
+import React from 'react';
+import { Link, AppBar, Box, Toolbar, IconButton, Menu, Container, Button, MenuItem } from '@mui/material';
 import MenuIcon from "@mui/icons-material/Menu";
 import ImageLogo from '../../assets/img/logo512.png';
 import { RewriteRep } from '../helper';
 
 const pages = ["Home", "About", "Skill", "Contact"];
 
-const ResponsiveAppBar = () => {
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
+const Header = () => {
+  const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
 
-  const handleOpenNavMenu = (event) => {
+  const handleOpenNavMenu =  (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
   };
 
@@ -23,7 +23,7 @@ const ResponsiveAppBar = () => {
         <Toolbar disableGutters>
           <Box sx={{ mt: 0.7,
               display: 'flex' }}>
-            <img src={ImageLogo} className="navLogo App-logo"/>
+            <img src={ImageLogo} className="navLogo App-logo" alt="HeaderLogo"/>
             <Box sx={{ mt: 0,
                 ml: 0.5,
                 mr:3 }}>
@@ -71,7 +71,7 @@ const ResponsiveAppBar = () => {
           <Box sx={{ mt: 0.7,
               display: {xs: "none",
               sx: 'flex' } }}>
-            <img src={ImageLogo} className="navLogo App-logo"/>
+            <img src={ImageLogo} className="navLogo App-logo" alt="HeaderLogo"/>
             <Box sx={{
                 mt: 0,
                 ml: 0.5,
@@ -98,4 +98,5 @@ const ResponsiveAppBar = () => {
     </AppBar>
   );
 };
-export default ResponsiveAppBar;
+
+export default Header;

@@ -1,11 +1,12 @@
+import React from 'react';
 import './App.css';
 import "./assets/css/style.css";
 import Router from './Router';
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
-import { Image6, Image7, Background　} from './components/index';
+import { Image6, Image7, Background } from './components/index';
 
-const App = () => {
+const App: React.FC = () => {
 
   return (
 		<main>

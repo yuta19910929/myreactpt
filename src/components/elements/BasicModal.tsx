@@ -1,6 +1,7 @@
-import * as React from "react";
+import React from 'react';
 import { useState } from "react";
 import { Box, Button, Typography, Modal, Rating } from '@mui/material';
+import { commonType } from '../../types/index';
 
 const style = {
   position: 'absolute',
@@ -14,7 +15,7 @@ const style = {
   p: 4,
 };
 
-const BasicModal = (props) => {
+const BasicModal = (props: commonType) => {
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);

@@ -1,10 +1,12 @@
-import { Table, TableBody, TableContainer, TableHead, TableRow, Paper, Box } from '@mui/material';
+import React from 'react';
+import { Table, TableBody, TableContainer, TableHead, TableRow, Paper } from '@mui/material';
 import TableCell, { tableCellClasses } from '@mui/material/TableCell';
 import { styled } from '@mui/material/styles';
 import { H3 } from '../index';
-import { returnCodeToBr } from '../helper.js';
 import  "../../assets/css/style.css";
-import { careers } from '../index.js';
+import { careers } from '../../data/Data';
+import { commonType } from '../../types/index';
+import { returnCodeToBr } from '../helper';
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -26,7 +28,7 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
   },
 }));
 
-const CustomizedTables = (props) => {
+const CustomizedTables = (props: commonType) => {
   return (
     <>
       <div className="w70 m-0a mt-50">
@@ -48,11 +50,17 @@ const CustomizedTables = (props) => {
             {careers.map((item) => (
               <StyledTableRow key={item.business}>
                 <StyledTableCell component="th" scope="row">
-                  {item.date}
+                  {returnCodeToBr(item.date)}
                 </StyledTableCell>
-                <StyledTableCell align="center">{item.business}</StyledTableCell>
-                <StyledTableCell align="right">{item.language}</StyledTableCell>
-                <StyledTableCell align="right">{item.tool}</StyledTableCell>
+                <StyledTableCell align="center">
+                  {returnCodeToBr(item.business)}
+                </StyledTableCell>
+                <StyledTableCell align="right">
+                  {returnCodeToBr(item.language)}
+                </StyledTableCell>
+                <StyledTableCell align="right">
+                  {returnCodeToBr(item.tool)}
+                </StyledTableCell>
               </StyledTableRow>
             ))}
           </TableBody>

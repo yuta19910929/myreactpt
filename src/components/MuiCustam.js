@@ -1,6 +1,6 @@
 import { ThemeProvider, createTheme, styled } from '@mui/material';
 
-const Theme = createTheme({
+export const Theme = createTheme({
   palette: {
     // シアン
     cyan: {
@@ -19,5 +19,3 @@ const Theme = createTheme({
     },
   },
 });
-
-export default Theme;

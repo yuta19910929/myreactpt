@@ -1,8 +1,10 @@
+import React from 'react';
 import { Box } from '@mui/material';
 import { H3 } from '../index';
 import  "../../assets/css/style.css";
+import { commonType } from '../../types/index';
 
-const Container2ColumnRev = (props) => {
+const Container2ColumnRev = (props: commonType) => {
 
   return(
     <Box sx={{
