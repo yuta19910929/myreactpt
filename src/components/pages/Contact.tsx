@@ -1,3 +1,4 @@
+import React from 'react';
 import{ init, send } from '@emailjs/browser';
 import { useState } from "react";
 import { TextField, Box, Button } from '@mui/material';
@@ -6,11 +7,11 @@ import  "../../assets/css/style.css";
 const Contact = () => {
 
     //入力内容をセットするuseStateを定義
-    const [name,setName] = useState("");
-    const [mail,setMail] = useState("");
-    const [message,setMessage] = useState("");
-    const [isVisible, setVisibility] = useState(true);
-    const [isVisible2, setVisibility2] = useState(false);
+    const [name,setName] = useState<string>("");
+    const [mail,setMail] = useState<string>("");
+    const [message,setMessage] = useState<string>("");
+    const [isVisible, setVisibility] = useState<boolean>(true);
+    const [isVisible2, setVisibility2] = useState<boolean>(false);
     const updateVisibility = () => {
       setVisibility(false);
       setVisibility2(true);

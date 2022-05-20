@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../assets/css/style.css';
-import { commonType } from '../../types/index';
+import { commonType } from '../../types/common';
 
 const Background = (props: commonType) => {
   const {backImg_1, backImg_2} = props;

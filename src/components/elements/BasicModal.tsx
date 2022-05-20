@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from "react";
 import { Box, Button, Typography, Modal, Rating } from '@mui/material';
-import { commonType } from '../../types/index';
+import { commonType } from '../../types/common';
 
 const style = {
   position: 'absolute',

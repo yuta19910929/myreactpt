@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box } from '@mui/material';
-import { returnCodeToBr } from '../helper.js';
+import { returnCodeToBr } from '../helper';
 import { Container1Column, Container2Column, Container2ColumnRev, CustomizedTables, H2 } from '../index';
 import  "../../assets/css/style.css";
 

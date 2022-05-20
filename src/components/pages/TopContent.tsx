@@ -12,24 +12,27 @@ const TopContent = () => {
     <div className="topContent">
       <EyeCatch />
       <div id="topSelect">
-        <Box sx={{ width: '70%',
+        <Box sx={{ 
+          width: '70%',
           maxWidth: '100%',
           mx: "auto",
           p: 2 }}>
-          <Box sx={{ display: 'flex',
+          <Box sx={{ 
+            display: 'flex',
             width: '100%',
             maxWidth: '100%',
             flexWrap: 'wrap',
             justifyContent: 'center',
             flexDirection: { sm:'row', xs: 'column'} }}>
             {topitems.map((item) => {
-              return <Box sx={{ display: 'flex',
+              return <Box sx={{ 
+                display: 'flex',
                 width:{ xs:'90%', sm:'30%' },
                 maxWidth: '100%',
                 flexDirection: 'column',
                 mx: "auto",
                 mb: 5 }}>
-                <Link to={item.link} className="topSubAreaBox">
+                <Link to={item.link.toLowerCase()} className="topSubAreaBox">
                   <TopLinkButton
                     contentImg={item.Image}
                   />

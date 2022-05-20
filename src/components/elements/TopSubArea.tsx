@@ -1,5 +1,5 @@
 import React from 'react';
-import { commonType } from '../../types/index';
+import { commonType } from '../../types/common';
 
 const TopSubArea = (props: commonType) => {
   return (
