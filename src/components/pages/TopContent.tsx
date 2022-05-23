@@ -3,10 +3,31 @@ import { Link } from "react-router-dom";
 import Box from '@mui/material/Box';
 import TopSubArea from '../elements/TopSubArea';
 import { TopLinkButton, EyeCatch } from '../index';
-import "../../assets/css/style.css";
-import { topitems } from '../../data/Data';
+import {Image1 ,Image2 ,Image3} from '../index';
+
+type topData = {
+  link: string;
+  Image: string;
+  Title: string;
+  Txt: string;
+}[];
 
 const TopContent = () => {
+
+  const topitems: topData = [
+    { link: '/About',
+      Image: Image1,
+      Title: 'About',
+      Txt: '簡単な自己紹介とキャリアについて'},
+    { link: '/Skill',
+      Image: Image2,
+      Title: 'Skill',
+      Txt: 'これまでに勉強してきた言語やツールについて'},
+    { link: '/Contact',
+      Image: Image3,
+      Title: 'Conact',
+      Txt: 'お問合せフォームはこちら'},
+  ];
 
   return (
     <div className="topContent">

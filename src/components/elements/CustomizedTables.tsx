@@ -3,7 +3,6 @@ import { Table, TableBody, TableContainer, TableHead, TableRow, Paper } from '@m
 import TableCell, { tableCellClasses } from '@mui/material/TableCell';
 import { styled } from '@mui/material/styles';
 import { H3 } from '../index';
-import  "../../assets/css/style.css";
 import { careers } from '../../data/Data';
 import { commonType } from '../../types/common';
 import { returnCodeToBr } from '../helper';

@@ -1,7 +1,6 @@
 import React from 'react';
 import { Box } from '@mui/material';
 import { H3 } from '../index';
-import  "../../assets/css/style.css";
 import { commonType } from '../../types/common';
 
 const Container1Column = (props: commonType) => {

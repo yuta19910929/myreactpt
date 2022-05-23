@@ -2,7 +2,7 @@ export type topData = [{
   Title: string;
   Content: string;
   Star: number;
-}]
+}];
 
 export type commonType = {
   H1?: string;
@@ -28,4 +28,8 @@ export type skillType = [{
   Title: string;
   Content: string;
   Star: number;
-}]
+}];
+
+export type backImgType = {
+  imageSelect?: string;
+};
