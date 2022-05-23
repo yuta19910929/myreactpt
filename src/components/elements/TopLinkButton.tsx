@@ -1,6 +1,5 @@
 import React from 'react';
 import Box from '@mui/material/Box';
-import '../../assets/css/style.css';
 import { commonType } from '../../types/common';
 
 const TopLinkButton = (props: commonType) => {

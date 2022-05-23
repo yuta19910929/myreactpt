@@ -2,7 +2,6 @@ import React from 'react';
 import{ init, send } from '@emailjs/browser';
 import { useState } from "react";
 import { TextField, Box, Button } from '@mui/material';
-import  "../../assets/css/style.css";
 
 const Contact = () => {
 
@@ -34,7 +33,7 @@ const Contact = () => {
           };
           send(service_id, template_id, template_param).then(() => {
               console.log("success to send email");
-          })
+          });
         }
     }
 
@@ -60,7 +59,7 @@ const Contact = () => {
               mx: "auto",
               mt: 10,
               mb: 10,
-              width: {sm:'50%', xs:'70%'} }}>
+              width: {lg:'50%', md:'60%', sm:'80%', xs:'80%'} }}>
             <Box sx={{ width: {sm:'70%'},
               maxWidth: '100%',
               mx:'auto',
@@ -68,7 +67,7 @@ const Contact = () => {
               mb:10,
               textAlign:'center',
               p: 2 }}>
-                <h2>Contact</h2>
+            <h2>Contact</h2>
             </Box>
               <div className={isVisible ? 'visible' : 'invisible'}>
               <p>お問い合わせはこちらからお願いいたします。</p>

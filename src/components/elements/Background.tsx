@@ -1,19 +1,27 @@
-import React from 'react';
-import '../../assets/css/style.css';
-import { commonType } from '../../types/common';
+import React,{ useState, useEffect } from 'react';
+import { Image1, Image2, Image3, Image4, Image7 } from '../index';
 
-const Background = (props: commonType) => {
-  const {backImg_1, backImg_2} = props;
+const Background = () => {
+  const [imageSelect, setImageSelect] = useState<any>();
+  useEffect(() => {
+    const currentAddres = window.location.href;
+    if (currentAddres.match(/about/)) {
+        setImageSelect(Image1);
+      } else if(currentAddres.match(/skill/)){
+        setImageSelect(Image2);
+      }else if(currentAddres.match(/contact/)){
+        setImageSelect(Image4);
+      };
+  }, []);
+
   return (
 		<div className="contentsBg">
       <div className="contentsBg_1">
-        <img src={backImg_1} className="contentsBgSpin" alt="background"/>
+        <img src={Image7} className="contentsBgSpin" alt="" />
       </div>
-      {/*
       <div className="contentsBg_2">
-        <img src={backImg_2} />
+        <img src={imageSelect} alt=""/>
       </div>
-    */}
     </div>
 	);
 };

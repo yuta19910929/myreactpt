@@ -1,5 +1,4 @@
 import React from 'react';
-import "../../assets/css/style.css";
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap"; //GSAP
 

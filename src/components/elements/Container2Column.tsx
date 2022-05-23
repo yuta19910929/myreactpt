@@ -2,7 +2,6 @@ import React from 'react';
 import { Box } from '@mui/material';
 import { H3 } from '../index';
 import { commonType } from '../../types/common';
-import  "../../assets/css/style.css";
 
 const Container2Column = (props: commonType) => {
 

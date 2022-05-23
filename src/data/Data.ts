@@ -1,28 +1,3 @@
-import {Image1 ,Image2 ,Image3} from '../components/index';
-
-//Topページデータ
-type topData = {
-  link: string;
-  Image: string;
-  Title: string;
-  Txt: string;
-}[];
-
-export const topitems: topData = [
-  { link: '/About',
-    Image: Image1,
-    Title: 'About',
-    Txt: '簡単な自己紹介とキャリアについて'},
-  { link: '/Skill',
-    Image: Image2,
-    Title: 'Skill',
-    Txt: 'これまでに勉強してきた言語やツールについて'},
-  { link: '/Contact',
-    Image: Image3,
-    Title: 'Conact',
-    Txt: 'お問合せフォームはこちら'},
-];
-
 //Aboutページデータ
 
 type aboutData = {
