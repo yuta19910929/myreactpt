@@ -1,8 +1,8 @@
-export type topData = [{
+export type topData = {
   Title: string;
   Content: string;
   Star: number;
-}];
+};
 
 export type commonType = {
   H1?: string;
@@ -24,12 +24,8 @@ export type commonType = {
   Tool?: string;
 };  
 
-export type skillType = [{
+export type skillType = {
   Title: string;
   Content: string;
   Star: number;
-}];
-
-export type backImgType = {
-  imageSelect?: string;
 };

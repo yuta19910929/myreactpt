@@ -45,7 +45,7 @@ h3 {
 .taL{text-align: left!important;}
 .taR{text-align: right!important;}
 
-.m-0a{margin: 0 auto;}
+.m-0a{margin: 0 auto!important;}
 .m-20{margin: 20px!important;}
 .mt-50{margin-top: 50px!important;}
 

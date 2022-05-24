@@ -2,6 +2,7 @@ import React from 'react';
 import{ init, send } from '@emailjs/browser';
 import { useState } from "react";
 import { TextField, Box, Button } from '@mui/material';
+import { Background } from '../index';
 
 const Contact = () => {
 
@@ -54,7 +55,8 @@ const Contact = () => {
 
     return (
       <>
-        <div className="contact-page">
+        <Background />
+        <div id="all-contents" className="contact-page">
           <Box sx={{
               mx: "auto",
               mt: 10,
