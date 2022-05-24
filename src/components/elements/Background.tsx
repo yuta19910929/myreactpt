@@ -1,18 +1,8 @@
 import React,{ useState, useEffect } from 'react';
-import { Image1, Image2, Image3, Image4, Image7 } from '../index';
+import { Image1, Image2, Image3, Image7 } from '../index';
 
 const Background = () => {
-  const [imageSelect, setImageSelect] = useState<any>();
-  useEffect(() => {
-    const currentAddres = window.location.href;
-    if (currentAddres.match(/about/)) {
-        setImageSelect(Image1);
-      } else if(currentAddres.match(/skill/)){
-        setImageSelect(Image2);
-      }else if(currentAddres.match(/contact/)){
-        setImageSelect(Image4);
-      };
-  }, []);
+  const currentAddres = window.location.href;
 
   return (
 		<div className="contentsBg">
@@ -20,7 +10,9 @@ const Background = () => {
         <img src={Image7} className="contentsBgSpin" alt="" />
       </div>
       <div className="contentsBg_2">
-        <img src={imageSelect} alt=""/>
+        { currentAddres.match(/about/) && <img src={Image1} alt="" /> }
+        { currentAddres.match(/skill/) && <img src={Image2} alt="" /> }
+        { currentAddres.match(/contact/) && <img src={Image3} alt="" /> }
       </div>
     </div>
 	);

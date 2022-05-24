@@ -2,8 +2,8 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import Box from '@mui/material/Box';
 import TopSubArea from '../elements/TopSubArea';
-import { TopLinkButton, EyeCatch } from '../index';
-import {Image1 ,Image2 ,Image3} from '../index';
+import { TopLinkButton, EyeCatch, Background } from '../index';
+import { Image1 ,Image2 ,Image3 } from '../index';
 
 type topData = {
   link: string;
@@ -30,44 +30,47 @@ const TopContent = () => {
   ];
 
   return (
-    <div className="topContent">
-      <EyeCatch />
-      <div id="topSelect">
-        <Box sx={{ 
-          width: '70%',
-          maxWidth: '100%',
-          mx: "auto",
-          p: 2 }}>
+    <>
+      <Background />
+      <div id="all-contents" className="topContent">
+        <EyeCatch />
+        <div id="topSelect">
           <Box sx={{ 
-            display: 'flex',
-            width: '100%',
+            width: '70%',
             maxWidth: '100%',
-            flexWrap: 'wrap',
-            justifyContent: 'center',
-            flexDirection: { sm:'row', xs: 'column'} }}>
-            {topitems.map((item) => {
-              return <Box sx={{ 
-                display: 'flex',
-                width:{ xs:'90%', sm:'30%' },
-                maxWidth: '100%',
-                flexDirection: 'column',
-                mx: "auto",
-                mb: 5 }}>
-                <Link to={item.link.toLowerCase()} className="topSubAreaBox">
-                  <TopLinkButton
-                    contentImg={item.Image}
-                  />
-                  <TopSubArea
-                    H2={item.Title}
-                    subTxt={item.Txt}
-                  />
-                </Link>
-              </Box>
-            })}
+            mx: "auto",
+            p: 2 }}>
+            <Box sx={{ 
+              display: 'flex',
+              width: '100%',
+              maxWidth: '100%',
+              flexWrap: 'wrap',
+              justifyContent: 'center',
+              flexDirection: { sm:'row', xs: 'column'} }}>
+              {topitems.map((item) => {
+                return <Box sx={{ 
+                  display: 'flex',
+                  width:{ xs:'90%', sm:'30%' },
+                  maxWidth: '100%',
+                  flexDirection: 'column',
+                  mx: "auto",
+                  mb: 5 }}>
+                  <Link to={item.link.toLowerCase()} className="topSubAreaBox">
+                    <TopLinkButton
+                      contentImg={item.Image}
+                    />
+                    <TopSubArea
+                      H2={item.Title}
+                      subTxt={item.Txt}
+                    />
+                  </Link>
+                </Box>
+              })}
+            </Box>
           </Box>
-        </Box>
+        </div>
       </div>
-    </div>
+    </>
 	);
 }
 
