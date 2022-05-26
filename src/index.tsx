@@ -8,7 +8,7 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/r_portfolio">
       <ScrollToTop /> {/* 遷移時に一番上から表示する */}
       <App />
     </BrowserRouter>
