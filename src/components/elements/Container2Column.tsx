@@ -26,7 +26,7 @@ const Container2Column = (props: commonType) => {
         className={props.Style}>
         <H3
           H3={props.H3}
-          />
+        />
       </Box>
       <Box sx={{
         ml:0,

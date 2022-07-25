@@ -10,7 +10,7 @@ const About = () => {
       <Background />
       <div id="all-contents" className="about-page">
         <Box sx={{
-          width: {sm:'80%'},
+          width:{sm:'90%'},
           maxWidth: '100%',
           mx: "auto",
           mt:10,
